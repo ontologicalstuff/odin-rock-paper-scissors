@@ -22,30 +22,27 @@ let computerScore = 0;
 
 let oneRound = function (player, computer) {
     if (player === "rock" && computer === "scissors") {
-        pScore ++;
+        playerScore ++;
         return "You win! Rock beats scissors!";
     } else if (player === "rock" && computer === "paper") {
-        cScore ++;
+        computerScore ++;
         return "You lose! Paper beats rock!"; 
     } else if (player === "scissors" && computer === "rock") {
-        cScore ++;
+        computerScore ++;
         return "You lose! Rock beats scissors!"
     } else if (player === "scissors" && computer === "paper") {
-        pScore ++;
+        playerScore ++;
         return "You win! Scissors beats paper!";
     } else if (player === "paper" && computer === "rock") {
-        pScore ++;
+        playerScore ++;
         return "You win! Paper beats rocks!";
     } else if (player === "paper" && computer === "scissors") {
-        cScore ++;
+        computerScore ++;
         return "You lose! Scissors beats paper!";
     } else {
         return "It's a tie!"
     }  
 }
-
-
-
 
 /* Game function. */
 
