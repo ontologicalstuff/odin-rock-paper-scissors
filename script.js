@@ -15,8 +15,8 @@ const computerChoice = getComputerChoice();
 
 /* oneRound function */
 
-let pScore;
-let cScore;
+let pScore = 0;
+let cScore = 0;
 
 let oneRound = function (player, computer) {
     if (player === "rock" && computer === "scissors") {
@@ -47,5 +47,4 @@ console.log(oneRound(playerChoice, computerChoice))
 
 for (let i = 0; i < 5; i++) {
     oneRound(playerChoice, computerChoice);
-    console.log(pScore);
 } 
