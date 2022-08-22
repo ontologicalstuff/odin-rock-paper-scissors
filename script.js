@@ -8,10 +8,9 @@ function getComputerChoice() {
 
 /* Variables that represent computer and player choices */
 
-let playerChoice = prompt('Enter rock, paper, or scissors', '')
-playerChoice = playerChoice.toLowerCase();
+let playerChoice;
 
-const computerChoice = getComputerChoice();
+let computerChoice; 
 
 /* oneRound function */
 
@@ -42,9 +41,22 @@ let oneRound = function (player, computer) {
     }  
 }
 
-console.log(oneRound(playerChoice, computerChoice))
 
+function game() {
+    for (let i = 0; i < 5; i++) {
+        playerChoice = prompt('Enter rock, paper, or scissors', '')
+        playerChoice = playerChoice.toLowerCase();
+        computerChoice = getComputerChoice();
+        console.log(oneRound(playerChoice, computerChoice));
+        console.log(pScore, cScore);
+    }
+    if (pScore > cScore) {
+        return "You beat the computer! Hoorah!";
+    } else if (pScore < cScore) {
+        return "The computer beat you. :-( ";
+    } else {
+        return "It's a tie.";
+    }
+}
 
-for (let i = 0; i < 5; i++) {
-    oneRound(playerChoice, computerChoice);
-} 
+console.log(game());
