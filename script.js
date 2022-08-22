@@ -41,7 +41,7 @@ let oneRound = function (player, computer) {
     }  
 }
 
-
+/* Game function. Declare playerChoice and computerChoice variables above with let instead of const so both could be used and changed inside the game() function. */
 function game() {
     for (let i = 0; i < 5; i++) {
         playerChoice = prompt('Enter rock, paper, or scissors', '')
