@@ -8,16 +8,17 @@ function getComputerChoice() {
     return choices[choicesIndex];
 }
 
-/* Variables that represent computer and player choices */
+/* Variables that represent computer and player choices and their scores.  */
 
 let playerChoice;
 
 let computerChoice; 
 
-/* oneRound function */
+let playerScore = 0;
 
-let pScore = 0;
-let cScore = 0;
+let computerScore = 0;
+
+/* oneRound function */
 
 let oneRound = function (player, computer) {
     if (player === "rock" && computer === "scissors") {
@@ -43,8 +44,10 @@ let oneRound = function (player, computer) {
     }  
 }
 
-/* Game function. Declare playerChoice and computerChoice variables above with 
-let instead of const so both could be used and changed inside the game() function. */
+
+
+
+/* Game function. */
 
 function game() {
     for (let i = 0; i < 5; i++) {
