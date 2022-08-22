@@ -8,7 +8,7 @@ function getComputerChoice() {
 
 /* Variables that represent computer and player choices */
 
-let playerChoice = "Rock";
+let playerChoice = prompt('Enter rock, paper, or scissors', '')
 playerChoice = playerChoice.toLowerCase();
 
 const computerChoice = getComputerChoice();
@@ -41,8 +41,8 @@ let oneRound = function (player, computer) {
     }  
 }
 
-console.log(oneRound(playerChoice, computerChoice));
+
 
 for (let i = 0; i < 5; i++) {
     oneRound(playerChoice, computerChoice);
-}
+} 
