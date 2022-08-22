@@ -1,4 +1,6 @@
 
+/* August 22 3:20PM pre-GUI version */
+
 /* Function to randomly choose among rock, paper, and scissors. */
 function getComputerChoice() {
     let choices = ['rock', 'paper', 'scissors']
