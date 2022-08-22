@@ -52,11 +52,11 @@ function game() {
         playerChoice = playerChoice.toLowerCase();
         computerChoice = getComputerChoice();
         console.log(oneRound(playerChoice, computerChoice));
-        console.log(pScore, cScore);
+        console.log(playerScore, computerScore);
     }
-    if (pScore > cScore) {
+    if (playerScore > computerScore) {
         return "You beat the computer! Hoorah!";
-    } else if (pScore < cScore) {
+    } else if (playerScore < computerScore) {
         return "The computer beat you. :-( ";
     } else {
         return "It's a tie.";
