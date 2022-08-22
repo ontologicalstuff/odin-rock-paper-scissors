@@ -15,9 +15,10 @@ const computerChoice = getComputerChoice();
 
 /* oneRound function */
 
+let pScore;
+let cScore;
+
 let oneRound = function (player, computer) {
-    let pScore;
-    let cScore;
     if (player === "rock" && computer === "scissors") {
         pScore ++;
         return "You win! Rock beats scissors!";
@@ -41,8 +42,10 @@ let oneRound = function (player, computer) {
     }  
 }
 
+console.log(oneRound(playerChoice, computerChoice))
 
 
 for (let i = 0; i < 5; i++) {
     oneRound(playerChoice, computerChoice);
+    console.log(pScore);
 } 
